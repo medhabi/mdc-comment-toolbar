@@ -7,7 +7,7 @@ function mdc_comment_toolbar_option_page(){
 	?>
 <div class="wrap">
 	<h2>MDC Comment Toolbar Settings</h2>
-	<?php if($_POST){
+	<?php if(isset($_POST)){
 	update_option('is_comment_toolbar_enabled', $_POST['is_comment_toolbar_enabled']);
 	update_option('is_teeny', $_POST['is_teeny']);
 	update_option('is_quick_tag', $_POST['is_quick_tag']);
